@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: staging_environment
-      cancel-in-progress: true 
+      cancel-in-progress: false 
       #true or false
       
     steps:
