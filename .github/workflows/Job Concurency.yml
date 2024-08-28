@@ -8,11 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: staging_environment
-      cancel-in-progress: true
+      cancel-in-progress: true 
+      #true or false
       
     steps:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          sleep 30
+          sleep 20
